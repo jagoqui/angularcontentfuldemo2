@@ -1,0 +1,20 @@
+<h2>Job listings</h2>
+
+<div *ngFor="let l of jobListings" class="card" style="margin: 10px; width: 93%;">
+  <div class="card-body">
+    <h5 class="card-title">
+      {{ l.fields.role }}
+    </h5>
+    <h6 class="card-subtitle">
+      {{ l.fields.organization }} - {{ l.fields.date | date }}
+    </h6>
+    <div class="card-text">
+    <p>
+    {{ l.fields.description }}
+    </p>
+    
+    </div>
+    <a routerLink = "/listing/{{l.sys.id}}" class="btn btn-primary">Go to..</a>
+    
+  </div>
+</div>

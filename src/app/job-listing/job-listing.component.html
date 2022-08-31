@@ -1,0 +1,28 @@
+<div *ngIf="jobListing" class="card" style="margin: 10px; width: 93%;">
+  <div class="card-body">
+    <h5 class="card-title">
+      {{ jobListing.role }}
+    </h5>
+    <h6 class="card-subtitle">
+      {{ jobListing.organization }} - {{ jobListing.date | date }}
+    </h6>
+    <hr>
+    <div class="card-text">
+      <h5>
+      Description
+      </h5>
+     <p>
+      {{ jobListing.description }}
+     </p>
+     <hr>
+      <h5>
+      How to apply?
+      </h5>
+      <div [innerHtml]="jobListing.howToApply | toHtml"></div>
+     <hr>
+    </div>
+    <p>
+    Skills: {{ jobListing.skills }}
+    </p>
+  </div>
+</div>
