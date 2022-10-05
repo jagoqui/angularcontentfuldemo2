@@ -5,9 +5,10 @@
 export const environment = {
   production: false,
   contentful: {
-    spaceId: '27mto4msbpll',
-    accessToken: '8KY8fjuDXbqY-_wRAY6JORU6wdtuMv83kpVgau0KIAU'
-  }
+    spaceId: "<space_id>", // replace with your space ID
+    accessToken: "<content_delivery_api_key>", // replace with your CDA token
+    environment: "master", // replace with your environment ID if needed - master is the default production environment in Contentful
+  },
 };
 
 /*
