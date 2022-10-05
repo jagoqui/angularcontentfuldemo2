@@ -12,7 +12,9 @@ export class ContentService {
 
   client = createClient({
     space: environment.contentful.spaceId,
-    accessToken: environment.contentful.accessToken
+    accessToken: environment.contentful.accessToken,
+    environment: environment.contentful.environment
+
   });
   constructor() {}
   getJobListings(query?: object){
