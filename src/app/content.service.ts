@@ -20,7 +20,7 @@ export class ContentService {
   getJobListings(query?: object){
     return from(
     this.client.getEntries<TypeJobListingFields>(Object.assign({
-     content_type: 'jobListing'
+     content_type: 'job'
     }, query))
     );
   }

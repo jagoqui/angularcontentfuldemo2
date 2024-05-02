@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   contentful: {
-    spaceId: "<space_id>", // replace with your space ID
-    accessToken: "<content_delivery_api_key>", // replace with your CDA token
+    spaceId: "njmos0w3r5qf", // replace with your space ID
+    accessToken: "VnSOdfC46RMfTVXTvVoDc_0jZtHXZRUCfmDemrcpUhw", // replace with your CDA token
     environment: "master", // replace with your environment ID if needed - master is the default production environment in Contentful
   },
 };
